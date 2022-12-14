@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --primary-color: #8d8ddb;
-    --secondary-color: #2b255f;
-    --third-color:#86d0d0;
+    --primary-color: #321456;
+    --secondary-color: #1d053a;
+    --third-color:#6c4e90;
     --text-color1:#ffff;
-    
 }
 
 * {
@@ -40,10 +39,10 @@ body {
     font-size: 22pt;
     font-family: 'Varela Round', sans-serif;
     color: var(--text-color1);
-    font-size: 19pt;
+    font-size: 15pt;
     font-weight: 700;
-    background-color: #2b255f;
-    padding: 0em 1em ;
+    background-color: var(--secondary-color);
+    padding: 1em;
     border-radius: 15px;
 
 }
@@ -132,7 +131,7 @@ body {
 
 .rodape {
     margin-top: 1em;
-    background-color: var(--secondary-color);
+    background-color: var(--third-color);
     padding: 0.25em;
     flex-shrink: 0;
 }
@@ -147,15 +146,21 @@ body {
 }
 
 @media(max-width: 768px) {
+
+    .cabeçalho{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
     .cabeçalho-nav{
-        display: none;
         gap:0.5em
     }        
     .cabeçalho-item{
-        display: none;
         font-size: 11pt;
     }
     .principal {
+        padding-top: 0;
         display: flex;
         flex-direction: column;
 
@@ -173,6 +178,7 @@ body {
     .principal-img{
         order: -1;
         width: 100%;
+        padding-left:2em;
         margin: auto;
     }
 }
